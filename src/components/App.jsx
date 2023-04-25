@@ -4,7 +4,12 @@ import panels from "../emojipedia";
 
 function createEmoji(panel) {
   return (
-    <Entry emoji={panel.emoji} name={panel.name} description={panel.meaning} />
+    <Entry
+      key={panel.id}
+      emoji={panel.emoji}
+      name={panel.name}
+      description={panel.meaning}
+    />
   );
 }
 
